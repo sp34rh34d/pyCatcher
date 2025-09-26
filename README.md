@@ -52,7 +52,20 @@ Starting pyCatcher on port `1337`, allow internal network only (using a local we
 Sometimes you need to fetch your request catcher over internet (bugBounty/CTFs/pentesting), to expose your pyCatcher over internet, you can use a free [AWS EC2](https://aws.amazon.com/es/ec2/?trk=02bd2428-3348-4251-8b76-83ffa306f0f1&sc_channel=ps&ef_id=CjwKCAjw89jGBhB0EiwA2o1On8sv-Lp0963ncIsL-IVsaw-DsyBYpD8YT7UWJoWMhlqK8RxYmlvSEhoCVNkQAvD_BwE:G:s&s_kwcid=AL!4422!3!647999789403!e!!g!!aws%20ec2!19685287168!143348659342&gad_campaignid=19685287168&gbraid=0AAAAADjHtp8RYoaYTiZTBI93z1pldSMDl&gclid=CjwKCAjw89jGBhB0EiwA2o1On8sv-Lp0963ncIsL-IVsaw-DsyBYpD8YT7UWJoWMhlqK8RxYmlvSEhoCVNkQAvD_BwE) or using a port forward service like [lhr](https://localhost.run) / [serveo](https://serveo.net).\
 Serveo is available on pyCatcher using the arg `--serveo`.
 <br>
-
 <img width="1658" height="686" alt="Screenshot 2025-09-26 at 8 24 32 AM" src="https://github.com/user-attachments/assets/c5278451-9f62-4c43-8b5a-fef1521fcae1" />
+
+## Adding a custom route and save your XSS payload
+You can store your XSS payloads using the following command\
+`add --path hello --header Referer:https://fakereferer.com/ --header X-Flag:just++testing`\
+This will open a `nano` console, to allow you paste/write your payload easy
+<br>
+
+<img width="1090" height="149" alt="Screenshot 2025-09-26 at 8 41 33 AM" src="https://github.com/user-attachments/assets/a79a8f33-b9d6-4dda-8ea2-94131a13ded0" />
+<br>
+
+<img width="1643" height="392" alt="Screenshot 2025-09-26 at 8 43 33 AM" src="https://github.com/user-attachments/assets/b54e0bbc-4255-492f-9ff9-0023cbd51807" />
+
+
+
 
 
